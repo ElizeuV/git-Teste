@@ -1,3 +1,1198 @@
 Curso: Desenvolvimento de Sistemas
 
 Nome: Elizeu Vito Santos
+
+
+
+CMD: C:\Users\Elizeu Vito Santos>cd\
+
+C:\>git config --global user.name "Elizeu Vito Santos"
+
+C:\>
+
+C:\>git config --global user.email "elizeu.vitor.monteiro@gmail.com"
+
+C:\>cd\git-teste
+
+C:\git-teste>git-teste>git init
+'git-teste' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\git-teste>git init
+Reinitialized existing Git repository in C:/git-teste/.git/
+
+C:\git-teste>D\git-teste <ENTER>
+A sintaxe do comando está incorreta.
+
+C:\git-teste>CD\git-teste <ENTER>
+A sintaxe do comando está incorreta.
+
+C:\git-teste>CD\git-teste
+
+C:\git-teste>dir
+ O volume na unidade C é OS
+ O Número de Série do Volume é BC94-3C55
+
+ Pasta de C:\git-teste
+
+10/11/2021  19:57    <DIR>          .
+10/11/2021  19:44             1.111 aula1.txt
+10/11/2021  20:08                34 aula2.txt
+               2 arquivo(s)          1.145 bytes
+               1 pasta(s)   198.925.336.576 bytes disponíveis
+
+C:\git-teste>git add .
+
+C:\git-teste>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   aula1.txt
+        new file:   aula2.txt
+
+
+C:\git-teste>git commit -m "Primeiro arquivo criado Aula2"
+[master 87686e2] Primeiro arquivo criado Aula2
+ 2 files changed, 49 insertions(+), 1 deletion(-)
+ create mode 100644 aula2.txt
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git add .
+
+C:\git-teste>4
+'4' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\git-teste>git add .
+
+C:\git-teste>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   aula2.txt
+
+
+C:\git-teste>git diff
+
+C:\git-teste>git diff
+
+C:\git-teste>git commit -m "Inclusão do nome do aluno"
+[master b7cc04d] Inclusão do nome do aluno
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git log
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>git lof=g --decorate
+git: 'lof=g' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+C:\git-teste>git log --authot="mar"
+fatal: unrecognized argument: --authot=mar
+
+C:\git-teste>git log --author="mar
+
+C:\git-teste>git log --author="mar
+
+C:\git-teste>
+C:\git-teste>git shortlog
+Elizeu Vito Santos (4):
+      Primeiro arquivo criado
+      Inclusão dos professores
+      Primeiro arquivo criado Aula2
+      Inclusão do nome do aluno
+
+
+C:\git-teste>git shortlog --sn
+error: unknown option `--sn'
+usage: git shortlog [<options>] [<revision-range>] [[--] <path>...]
+   or: git log --pretty=short | git shortlog [<options>]
+
+    -c, --committer       group by committer rather than author
+    -n, --numbered        sort output according to the number of commits per author
+    -s, --summary         suppress commit descriptions, only provides commit count    -e, --email           show the email address of each author
+    -w[<w>[,<i1>[,<i2>]]]
+                          linewrap output
+    --group <field>       group by field
+
+
+C:\git-teste>git log --graph
+* commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4 (HEAD -> master)
+| Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+| Date:   Wed Nov 10 20:13:48 2021 -0300
+|
+|     Inclusão do nome do aluno
+|
+* commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+| Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+| Date:   Wed Nov 10 20:10:37 2021 -0300
+|
+|     Primeiro arquivo criado Aula2
+|
+* commit 22685e54faee5f71234f2f673b660133f30b2e43
+| Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+| Date:   Wed Nov 10 19:41:47 2021 -0300
+|
+|     Inclusão dos professores
+|
+* commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+  Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+  Date:   Wed Nov 10 19:39:25 2021 -0300
+
+      Primeiro arquivo criado
+
+C:\git-teste>git show
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+diff --git a/aula2.txt b/aula2.txt
+index 34f3bb7..875bf4c 100644
+--- a/aula2.txt
++++ b/aula2.txt
+@@ -1 +1,3 @@
+-Curso: Desenvolvimento de Sistemas
+\ No newline at end of file
++Curso: Desenvolvimento de Sistemas
++
++Nome: Elizeu Vito Santos
+
+C:\git-teste>git log
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>it status
+'it' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aula2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\git-teste>git diff
+diff --git a/aula2.txt b/aula2.txt
+index 875bf4c..0202353 100644
+--- a/aula2.txt
++++ b/aula2.txt
+@@ -1,3 +1,5 @@
+ Curso: Desenvolvimento de Sistemas
+
+ Nome: Elizeu Vito Santos
++
++Aula noturna
+
+C:\git-teste>git checkout aula2.txt
+Updated 1 path from the index
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git diff
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git add .
+
+C:\git-teste>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   aula2.txt
+
+
+C:\git-teste>git diff
+
+C:\git-teste>git commit -m"Teste desfazendo commit"
+[master 61095e1] Teste desfazendo commit
+ 1 file changed, 3 insertions(+)
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git log
+commit 61095e1424944954cbb47adf731a4ce54809d632 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:22:41 2021 -0300
+
+    Teste desfazendo commit
+
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>git reset -soft <b7cc04d9fbcb67976e2c259959ddd7113197e2d4 >
+A sintaxe do comando está incorreta.
+
+C:\git-teste>git reset -soft <b7cc04d9fbcb67976e2c259959ddd7113197e2d4>
+A sintaxe do comando está incorreta.
+
+C:\git-teste>git reset --soft <b7cc04d9fbcb67976e2c259959ddd7113197e2d4>
+A sintaxe do comando está incorreta.
+
+C:\git-teste>git reset --soft b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+
+C:\git-teste>git reset --soft b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+
+C:\git-teste>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   aula2.txt
+
+
+C:\git-teste>git commit -m "Teste desfazendo commit 2"
+[master 37ba3dd] Teste desfazendo commit 2
+ 1 file changed, 3 insertions(+)
+
+C:\git-teste>git log
+commit 37ba3ddbcc1be47a14f042c44c91b2c2e83a022a (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:34:45 2021 -0300
+
+    Teste desfazendo commit 2
+
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>git reset --mixed b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+Unstaged changes after reset:
+M       aula2.txt
+
+C:\git-teste>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aula2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\git-teste>git diff
+diff --git a/aula2.txt b/aula2.txt
+index 875bf4c..6e5e606 100644
+--- a/aula2.txt
++++ b/aula2.txt
+@@ -1,3 +1,6 @@
+ Curso: Desenvolvimento de Sistemas
+
+ Nome: Elizeu Vito Santos
++
++Aula de TP
++
+
+C:\git-teste>git add .
+
+C:\git-teste>git commit -m "Último teste do git reset"
+[master 63af1c4] Último teste do git reset
+ 1 file changed, 3 insertions(+)
+
+C:\git-teste>git log
+commit 63af1c4ef335cad8ff492c0a20fcc8cc77a2cd68 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:39:33 2021 -0300
+
+    Último teste do git reset
+
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>git reset --hard b7cc04d9fbcb67976e2c259959ddd7113197e2d4
+HEAD is now at b7cc04d Inclusão do nome do aluno
+
+C:\git-teste>git log
+commit b7cc04d9fbcb67976e2c259959ddd7113197e2d4 (HEAD -> master)
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:13:48 2021 -0300
+
+    Inclusão do nome do aluno
+
+commit 87686e2f271ac3916314e19f0c46b0a558f1bdfc
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 20:10:37 2021 -0300
+
+    Primeiro arquivo criado Aula2
+
+commit 22685e54faee5f71234f2f673b660133f30b2e43
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:41:47 2021 -0300
+
+    Inclusão dos professores
+
+commit 5c09ec87ab8d64eebe50c5bb6d212178556ea198
+Author: Elizeu Vito Santos <elizeu.vitor.monteiro@gmail.com>
+Date:   Wed Nov 10 19:39:25 2021 -0300
+
+    Primeiro arquivo criado
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\git-teste>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
